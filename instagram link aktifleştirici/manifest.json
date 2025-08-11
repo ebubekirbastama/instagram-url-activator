@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "EBS Instagram URL Aktifleştirici",
+  "version": "1.0",
+  "description": "Instagram gönderilerindeki yazı şeklindeki URL'leri tıklanabilir hale getirir.",
+  "permissions": [],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
